@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Trang cá nhân của tôi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e1e4e8;
+            padding: 80px 0;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #586069;
+        }
+
+        .content {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 50px;
+            margin-bottom: 40px;
+            border: 1px solid #e1e4e8;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section h2 {
+            color: #1a1a1a;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            font-weight: 600;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #0366d6;
+        }
+
+        .section p {
+            color: #586069;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-color: #0366d6;
+            transform: translateY(-2px);
+        }
+
+        .card h3 {
+            color: #0366d6;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: #586069;
+            font-size: 0.95em;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .skill-tag {
+            background: #f1f8ff;
+            color: #0366d6;
+            padding: 8px 16px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            border: 1px solid #c8e1ff;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            background: #0366d6;
+            color: #ffffff;
+            border-color: #0366d6;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px;
+            background: #f6f8fa;
+            border-radius: 6px;
+            border: 1px solid #e1e4e8;
+        }
+
+        .contact h2 {
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            font-weight: 600;
+            border: none;
+            padding: 0;
+        }
+
+        .contact p {
+            color: #586069;
+            margin-bottom: 25px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact a {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 24px;
+            border: 1px solid #0366d6;
+            border-radius: 6px;
+            display: inline-block;
+            transition: all 0.2s ease;
+        }
+
+        .contact a:hover {
+            background: #0366d6;
+            color: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #586069;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 50px 0;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .contact {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NC HUY</h1>
+            <p>Full Stack Developer | Software Engineer</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="section">
+                <h2>Giới thiệu</h2>
+                <p>Tôi là một lập trình viên với kinh nghiệm trong việc xây dựng các ứng dụng web hiện đại và có khả năng mở rộng. Đam mê về công nghệ và luôn cập nhật các xu hướng mới nhất trong phát triển phần mềm. Tôi tập trung vào việc viết code sạch, hiệu quả và dễ bảo trì.</p>
+            </div>
+
+            <div class="section">
+                <h2>Dự án</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Tên Dự án 1</h3>
+                        <p>Ứng dụng web quản lý dự án với React và Node.js. Tích hợp xác thực người dùng, quản lý nhiệm vụ và báo cáo thời gian thực.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Tên Dự án 2</h3>
+                        <p>Hệ thống thương mại điện tử với tích hợp thanh toán, quản lý kho hàng và phân tích dữ liệu khách hàng.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Tên Dự án 3</h3>
+                        <p>API RESTful được xây dựng với Express.js, cung cấp dịch vụ backend cho ứng dụng di động và web.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Kỹ năng</h2>
+                <div class="skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">REST API</span>
+                    <span class="skill-tag">Agile</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Liên hệ</h2>
+            <p>Tôi luôn sẵn sàng thảo luận về các dự án mới hoặc cơ hội hợp tác.</p>
+            <div class="contact-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 NCHUY. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
